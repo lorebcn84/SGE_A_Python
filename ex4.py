@@ -5,15 +5,15 @@ Si el salari és menor de 30.000 s’aplica un 10% de l’iva. Si el salari és 
 """
 salari = int(input("Introdueix el teu salari per calcular el tipus d'IVA: "))
 
-if salari < 15000:
-    print("No s'aplica cap tipus d'IVA")
+if salari >= 0 and salari < 15000:
+    print(f"No s'aplica cap tipus d'IVA, cobrarás {salari}€")
 elif salari >= 15000 and salari < 30000:
     impost = salari * 0.10
-    total_salari = salari + impost
+    total_salari = salari - impost
     print(f"S'aplicarà {impost}€ d'IVA i cobraràs en total {total_salari}€")
 elif salari >= 30000 and salari < 60000:
     impost = salari * 0.21
-    total_salari = salari + impost
+    total_salari = salari - impost
     print(f"S'aplicarà {impost}€ d'IVA i cobraràs en total {total_salari}€")
 else:
     print("Import incorrecte")
