@@ -7,6 +7,6 @@ i = 1
 #    print (i)
     
 #WHILE
-while i < 11:
+while i <= 10:
     print(i)
     i = i + 1

@@ -12,7 +12,7 @@ for numero in numeros:
     else:            
         impars += str(numero) + " "
 
-print("Pares:", pars)
-print("Impares:", impars)
+print("Parells:", pars)
+print("Imparells:", impars)
 
 
